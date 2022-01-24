@@ -1,5 +1,6 @@
 package com.testng;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class testngBasics {
@@ -8,6 +9,7 @@ public class testngBasics {
 	public void Demo()
 	{
 		System.out.println("Hello");
+		Assert.assertEquals(false, true);
 	}
 	
 	@Test(enabled=false)

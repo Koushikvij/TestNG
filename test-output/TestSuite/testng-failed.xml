@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.testng.Listeners"/>
+  </listeners>
+  <test thread-count="10" name="Smoke(failed)" parallel="methods">
+    <parameter name="APIURL" value="https://api.yahoo.com"/>
+    <parameter name="MobileURL" value="https://m.yahoo.com"/>
+    <parameter name="WebURL" value="https://www.yahoo.com"/>
+    <classes>
+      <class name="com.testng.testngBasics">
+        <methods>
+          <include name="Demo"/>
+        </methods>
+      </class> <!-- com.testng.testngBasics -->
+    </classes>
+  </test> <!-- Smoke(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
